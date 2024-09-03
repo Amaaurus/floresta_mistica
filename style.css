@@ -1,13 +1,13 @@
 body /* padrão */ {
 	margin: 0;
-	background-color: #250029;
+	background-color: #30003a;
 	color: rgb(255, 255, 255);
 	cursor: url('images/cursor_auto.png'), auto;
 }
 
 ::selection {
 	background-color: #00ff99; /* Cor de fundo da seleção */
-	color: #320038; /* Cor do texto selecionado */
+	color: #230027; /* Cor do texto selecionado */
 }
 
 .container {
@@ -38,7 +38,7 @@ body /* padrão */ {
 }
 
 .card {
-  background-color: #320038;
+  background-color: #77018f;
   min-width: 5rem;
   min-height: 8rem;
   margin: 5% 0;
@@ -61,7 +61,7 @@ body /* padrão */ {
 }
 
 .card0 {
-	background-color: #320038;
+	background-color: #77018f;
 	min-width: 5rem;
 	min-height: 8rem;
 	margin-top: 5%;
@@ -99,11 +99,11 @@ body /* padrão */ {
 .botao {
 	padding: 20px 35px;
 	text-transform: uppercase;
-	background-color: #250029;
+	background-color: #30003a;
 	color: white;
 	border: none;
 	border-radius: 5px;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	cursor: url('images/cursor_pointer.png'), pointer;
 }
 
