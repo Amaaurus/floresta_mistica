@@ -1,71 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="images/I1.png" />
-    <title>Acervo Místico</title>
-  </head>
+<head>
+    <meta charset="UTF-8" /> <!-- ? -->
+    <link rel="stylesheet" href="style.css" /> <!-- conexão com o documento css -->
+    <link rel="icon" type="image/x-icon" href="images/1.png" /> <!-- ícone da barra superior -->
+    <title>Floresta Mística</title> <!-- título da barra superior -->
+</head>
 
-  <body onload="slide1()">
-    <div class="Container">
-      <header id="header">
-        <p>Acervo Místico</p>
-      </header>
-	  <section id="system">
-          <header class="introdução">
-          </header>
-      <main>
-        <section id="system">
-          <header class=bloco1>
-			<h2 class="titulo">SISTEMAS</h2>
-            <h3>escolha um abaixo</h3>
-			<img src="images/I5.png" title="Dungeon in Dragons" width="30" height="30" />
-          </header>
-          <div class="cards">
-            <div id="card">
-              <img src="images/I3.jpg" id="slider" title="Dungeon in Dragons" width="200" height="300" />
-              <p>D&D</p>
-              <p id="subtitle"> Dungeons & Dragons </p>
-              <button class="Button"><a href="D&D/index.html">Selecionar</a></button>
+<body class="container">
+    <header class="cabeçalho"> <!-- cabeçalho -->
+        <nav class="menu"> <!-- navegador -->
+        </nav>
+    </header>
+
+    <main class="principal"> <!-- conteúdo -->
+        <h1 class="titulo"> SELECIONE O SISTEMA ABAIXO</h1>
+        <img src="images/3.png" width="30" height="30" />
+
+        <!-- cards -->
+        <div class="cards">
+            <div class="card0">
+                <img class="img" src="sistemas/d&d/images_d&d/d&d_perfil.jpg" width="250" height="250" />
+                <p class="titulo">D&D</p>
+                <p class="subtitle"> Dungeons & Dragons </p>
+                <a href="D&D/index.html"><button class="botao"> Selecionar </button></a>
             </div>
-            <div id="card">
-              <img
-                src="images/I4.png"
-                id="slider"
-                title="Portas, Portas e Mais Portas" width="200" height="300"
-              />
-              <p>PP&+P</p>
-              <p id="subtitle"> Portas Portas & Mais Portas </p>
-              <button class="Button">
-                <a href="PP&+P/index.html">Selecionar</a>
-              </button>
+
+            <div class="card0">
+                <img class="img" src="sistemas/pp&+p/images_pp&+p/pp&+p_perfil.png" width="250" height="250" />
+                <p class="titulo">PP&+P</p>
+                <p class="subtitle"> Portas Portas & Mais Portas </p>
+                <a href="PP&+P/index.html"><button class="botao"> Selecionar </button></a>
             </div>
-            <div id="card">
-              <img
-                src="images/I2.png"
-                id="slider"
-                title="Sistema de Alexsandro" width="200" height="300"
-              />
-              <p>T20</p>
-              <p id="subtitle"> TORMENTA 20 </p>
-              <button class="Button"><a href="D&D.html">Selecionar</a></button>
+
+            <div class="card0">
+                <img class="img" src="sistemas/t20/images_t20/t20_perfil.png" width="250" height="250" />
+                <p class="titulo">T20</p>
+                <p class="subtitle"> Tormenta 20 </p>
+                <a href="D&D.html"><button class="botao">Selecionar</button></a>
             </div>
+
+            <div class="card0">
+                <img class="img" src="sistemas/ngba/images_ngba/ngba_perfil.jpeg" width="250" height="250" />
+                <p class="titulo">NGBA</p>
+                <p class="subtitle"> Neon Gentilmente </br> Bizarre Adventures </p>
+                <a href="D&D.html"><button class="botao">Selecionar</button></a>
+            </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+              <img class="img" src="sistemas/" width="250" height="250" />
+              <p class="titulo">?</p>
+              <p class="subtitle"> ? </p>
+              <a href="D&D/index.html"><button class="botao"> Selecionar </button></a>
           </div>
-        </section>
-      </main>
-      <p class="subtitle" id="rodape">
-        Iniciativa idealizada e criada por
-		<a id="link" href="https://github.com/Amaaurus"><b>Amaaurus</b></a
-        >
-      </p>
-    </div>
-  </body>
+
+          <div class="card">
+              <img class="img" src="sistemas/" width="250" height="250" />
+              <p class="titulo">?</p>
+              <p class="subtitle"> ? </p>
+              <a href="PP&+P/index.html"><button class="botao"> Selecionar </button></a>
+          </div>
+
+          <div class="card">
+              <img class="img" src="sistemas/" width="250" height="250" />
+              <p class="titulo">?</p>
+              <p class="subtitle"> ? </p>
+              <a href="D&D.html"><button class="botao">Selecionar</button></a>
+          </div>
+
+          <div class="card">
+              <img class="img" src="sistemas/" width="250" height="250" />
+              <p class="titulo">?</p>
+              <p class="subtitle"> ? </p>
+              <a href="D&D.html"><button class="botao">Selecionar</button></a>
+          </div>
+      </div>
+    </main>
+
+    <footer class="rodape"> <!-- rodapé -->
+        <div class="imagem">
+            <img src="images/2.png" width="100%" margin="0% 0%% 0% 0%" />
+        </div>
+        <div class="bloco">
+            <p class="copyright"> Projeto desenvolvido por AMAAURUS • 2024 </p>
+        </div>
+    </footer>
+</body>
+
 </html>
