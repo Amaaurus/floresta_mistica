@@ -113,6 +113,13 @@ body /* padrão */ {
 }
 
 .titulo {
+	margin: 2rem 2rem 1rem 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.titulo2 {
 	margin: 0.5rem 2rem 1rem 2rem;
 	text-align: center;
 	text-transform: uppercase;
