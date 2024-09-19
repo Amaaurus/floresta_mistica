@@ -30,7 +30,8 @@ body /* padrão */ {
 
 .img {
 	cursor: url('images/cursor_auto.png'), auto;
-	
+	width: 220px;
+	height: 220px;
 }
 
 .img:hover {
@@ -47,6 +48,8 @@ body /* padrão */ {
   min-width: 5rem;
   min-height: 8rem;
   margin: 5% 0;
+  margin-left: 1%;
+  margin-right: 1%;
   padding: 10px 0 2%;
   display: flex;
   align-items: center;
@@ -62,25 +65,32 @@ body /* padrão */ {
 .card img{
   transition: background-color 0.3s, color 0.3s;
   transition: filter 0.5s;
-  filter: sepia(100%) hue-rotate(220deg);
+  filter: sepia(100%) hue-rotate(220deg)
 }
 
 .card:hover img{
 	filter: grayscale(0%);
+	margin: none;
 }
 
 .card0 img{
 	transition: background-color 0.3s, color 0.3s;
 	transition: filter 0.5s;
 	filter: sepia(100%) hue-rotate(220deg);
+	margin-left: 0%;
+	margin-right: 0%;
   }
   
   .card0:hover img{
-	filter: sepia(0%)
+	filter: sepia(0%);
+	margin-left: 0%;
+	margin-right: 0%;
   }
 .card:hover {
 	background-color: #00ff99;
 	color: black;
+	margin-left: 1%;
+	margin-right: 1%;
 }
 
 .card0 {
@@ -99,11 +109,15 @@ body /* padrão */ {
 	border-radius: 1%;
 	cursor: url('images/cursor_move.png'), move;
 	transition: background-color 0.3s, color 0.3s;
+	margin-left: 1%;
+	margin-right: 1%;
   }
   
   .card0:hover {
 	  background-color: #00ff99;
 	  color: black;
+	  margin-left: 1%;
+	  margin-right: 1%;
   }
 
 .subtitle {
@@ -244,6 +258,8 @@ html {
     justify-content: center; /* Centraliza horizontalmente */
 	margin-top: 25px;
 	text-decoration: none;
+	cursor: url('images/cursor_auto.png'), auto;
+
 }
 
 .imagem{
