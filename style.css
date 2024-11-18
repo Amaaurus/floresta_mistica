@@ -28,6 +28,12 @@ body /* padrão */ {
 	font-family: arial;
 }
 
+.titulo2 {
+	text-align: center;
+	font-family: arial;
+	margin-top: 0%;
+}
+
 .img {
 	cursor: url('images/cursor_auto.png'), auto;
 	width: 220px;
@@ -40,10 +46,14 @@ body /* padrão */ {
 
 .cards {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .card {
+  justify-content: flex-start;
+  align-items: center;
   background-color: #4f018f;
   min-width: 5rem;
   min-height: 8rem;
@@ -52,8 +62,6 @@ body /* padrão */ {
   margin-right: 1%;
   padding: 10px 0 2%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   box-shadow: 0px 0px 15px 0px #010e1f;
   transition: 1s;
@@ -72,6 +80,77 @@ body /* padrão */ {
 	filter: grayscale(0%);
 	margin: none;
 }
+
+.card2 {
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #4f018f;
+	min-width: 5rem;
+	min-height: 8rem;
+	margin: 5% 0;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding: 10px 0 2%;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 15px 0px #010e1f;
+	transition: 1s;
+	color: #ffffff;
+	border-radius: 1%;
+	cursor: url('images/cursor_move.png'), move;
+	transition: background-color 0.5s ease;
+  }
+  
+  .card2:hover {
+	background-color: #00ff99;
+	color: black;
+	margin-left: 1%;
+	margin-right: 1%;
+	animation: rainbow-bg 6s infinite;
+}
+
+.plus-icon {
+    width: 220px;
+    height: 220px;
+    color: rgba(255, 255, 255, 0);
+	fill: #20003a;
+}
+
+.card2 .plus-icon:hover{
+	transition: 0.5s;
+    width: 220px;
+    height: 220px;
+    color: rgba(0, 0, 0, 0);
+	fill: #20003a;
+}
+
+@keyframes rainbow-bg {
+    0% { background-color: #FF0000; } /* Vermelho */
+    1% { background-color: #FF1A00; } /* Vermelho Escuro */
+    2% { background-color: #FF3300; } /* Laranja claro */
+    4% { background-color: #FF4D00; } /* Laranja médio */
+    6% { background-color: #ff7f2a; } /* Laranja mais vívido */
+    8% { background-color: #ff952b; } /* Laranja mais escuro */
+    10% { background-color: #ffa51d; } /* Laranja forte */
+    15% { background-color: #FFCC00; } /* Amarelo forte */
+    20% { background-color: #FFFF00; } /* Amarelo */
+    25% { background-color: #BFFF00; } /* Amarelo Limão */
+    30% { background-color: #00FF00; } /* Verde Limão */
+    35% { background-color: #00FF33; } /* Verde Claro */
+    40% { background-color: #00FF66; } /* Verde Turquesa */
+    45% { background-color: #00FF99; } /* Verde Limão Claro */
+    50% { background-color: #00CCFF; } /* Azul Claro */
+    55% { background-color: #0099FF; } /* Azul Forte */
+    60% { background-color: #0066FF; } /* Azul Royal */
+    65% { background-color: #0033FF; } /* Azul Escuro */
+    70% { background-color: #6600FF; } /* Roxo Claro */
+    75% { background-color: #9900FF; } /* Roxo Médio */
+    80% { background-color: #CC00FF; } /* Roxo Forte */
+    85% { background-color: #ff0080; } /* Rosa forte */
+    90% { background-color: #ff0077; } /* Rosa mais claro */
+    95% { background-color: #ff002b; } /* Rosa avermelhado */
+    100% { background-color: #FF0000; } /* Retorno ao Vermelho */
+  }
 
 .card0 img{
 	transition: background-color 0.3s, color 0.3s;
@@ -126,6 +205,19 @@ body /* padrão */ {
 	text-align: center;
 }
 
+.teste {
+	margin-top: 20px;
+	background-color 0.5s ease;
+	color: #0033FF;
+	transition: color 6s ease;
+}
+
+.teste:hover {
+	margin-top: 20px;
+	animation: rainbow-bg 6s infinite;
+}
+
+
 .titulo {
 	margin: 2rem 2rem 1rem 2rem;
 	text-align: center;
@@ -134,7 +226,7 @@ body /* padrão */ {
 }
 
 .titulo2 {
-	margin: 0.5rem 2rem 1rem 2rem;
+	margin: 0rem 2rem 1rem 2rem;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -176,7 +268,95 @@ body /* padrão */ {
 
 
 
+
+
+
 /*-------------------------------------------*/
+
+.rainbow-text {
+    
+  }
+
+  /* Animação ao passar o mouse */
+  .rainbow-text:hover {
+    animation: rainbow-text-color 6s infinite; /* Animação de cor ao passar o mouse */
+  }
+
+  /* Keyframes para a animação do texto com cor */
+  @keyframes rainbow-text-color {
+    0% { color: #FF0000; } /* Vermelho */
+    1% { color: #FF1A00; } /* Vermelho escuro */
+    2% { color: #FF3300; } /* Laranja claro */
+    4% { color: #FF4D00; } /* Laranja médio */
+    6% { color: #FF6600; } /* Laranja mais vívido */
+    8% { color: #FF7F00; } /* Laranja mais escuro */
+    10% { color: #FF9900; } /* Laranja forte */
+    15% { color: #FFCC00; } /* Amarelo forte */
+    20% { color: #FFFF00; } /* Amarelo */
+    25% { color: #BFFF00; } /* Amarelo limão */
+    30% { color: #00FF00; } /* Verde limão */
+    35% { color: #00FF33; } /* Verde claro */
+    40% { color: #00FF66; } /* Verde turquesa */
+    45% { color: #00FF99; } /* Verde limão claro */
+    50% { color: #00CCFF; } /* Azul claro */
+    55% { color: #0099FF; } /* Azul forte */
+    60% { color: #0066FF; } /* Azul royal */
+    65% { color: #0033FF; } /* Azul escuro */
+    70% { color: #6600FF; } /* Roxo claro */
+    75% { color: #9900FF; } /* Roxo médio */
+    80% { color: #CC00FF; } /* Roxo forte */
+    85% { color: #FF00CC; } /* Rosa forte */
+    90% { color: #FF0099; } /* Rosa mais claro */
+    95% { color: #FF0066; } /* Rosa avermelhado */
+    100% { color: #FF0000; } /* Retorno ao vermelho */
+  }
+
+.botao4 {
+	padding: 20px 35px;
+	text-transform: uppercase;
+	background-color: #20003a;
+	border: none;
+	border-radius: 5px;
+	transition: all 0.2s ease-in-out;
+	cursor: url('images/cursor_pointer.png'), pointer;
+	font-weight: bold;
+	color: rgb(98, 34, 151);
+	transition: color 0.5s ease;
+	
+	
+	
+}
+
+.botao4 > a {
+	text-decoration: none;
+	
+}
+
+
+
+.botao4:hover {
+	background-color: #20003a;
+	box-shadow: 0px 0px 5px rgb(0, 37, 19);
+	transform: scale(1.1);
+	font-weight: bold;
+	color: rgb(217, 255, 0);
+	animation: rainbow-text-color 6s infinite
+}
+
+.card2 .botao4{
+	color: rgb(98, 34, 151);
+	transition: color 0.5s ease;
+}
+
+.card2:hover .botao4{
+	color: rgb(51, 255, 0);
+	animation: rainbow-text-color 6s infinite
+}
+
+.botao4 > a:hover {
+	transform: scale(1.1);
+	cursor: url('images/cursor_auto.png'), auto;
+}
 
 .rodape {
 	position: absolute;
