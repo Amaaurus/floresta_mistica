@@ -535,6 +535,23 @@ html {
 	text-align: center;
 	z-index: 1000; /* Fixa o menu acima de outros elementos */
 }
+
+.ref{
+	color:#00ff99;
+	text-decoration: none;
+}
+
+.ref::after{
+	content: "Amaaurus";
+}
+
+.ref:hover::after{
+	color:#a04ee2;
+	text-decoration: none;
+	text-transform: uppercase;
+	content: "Meu GitHub";
+}
+
 .menu a {
 	color: white;
 	text-decoration: none;
