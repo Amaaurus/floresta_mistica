@@ -201,9 +201,22 @@ body /* padrão */ {
 
 .subtitle {
 	width: 160px;
-	height: 40px;
+	height: 0px;
 	text-align: center;
 }
+
+.subtitle2 {
+	width: 160px;
+	height: 0px;
+	text-align: center;
+}
+
+.mestre{
+	text-decoration: none;
+	color: #00ff99;
+	font-weight: bold;
+}
+
 
 .teste {
 	margin-top: 20px;
