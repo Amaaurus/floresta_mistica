@@ -552,6 +552,7 @@ html {
 .ref{
 	color:#00ff99;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 .ref::after{
