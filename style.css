@@ -79,6 +79,10 @@ body /* padrão */ {
 .card:hover img{
 	filter: grayscale(0%);
 	margin: none;
+	transition: 1s;
+	transform: perspective(1000px) translateY(40%) rotateY(360deg) translateZ(0);
+	border-radius: 100%;
+	
 }
 
 .card2 {
@@ -164,12 +168,24 @@ body /* padrão */ {
 	filter: sepia(0%);
 	margin-left: 0%;
 	margin-right: 0%;
+	transition: 1s;
+	transform: perspective(1000px) translateY(40%) rotateY(360deg) translateZ(0);
+	border-radius: 100%;
   }
 .card:hover {
 	background-color: #00ff99;
 	color: black;
 	margin-left: 1%;
 	margin-right: 1%;
+	box-shadow: 0px 0px 1px 10px #00ff99;
+}
+
+.card:hover p{
+	clip-path: inset(100%);
+}
+
+.card0:hover p{
+	clip-path: inset(100%);
 }
 
 .card0 {
@@ -197,6 +213,8 @@ body /* padrão */ {
 	  color: black;
 	  margin-left: 1%;
 	  margin-right: 1%;
+	  transition: 1s;
+	  box-shadow: 0px 0px 1px 10px #00ff99;
   }
 
 .subtitle {
@@ -220,7 +238,7 @@ body /* padrão */ {
 
 .teste {
 	margin-top: 20px;
-	background-color 0.5s ease;
+	background-color: 0.5s ease;
 	color: #0033FF;
 	transition: color 6s ease;
 }
@@ -286,9 +304,6 @@ body /* padrão */ {
 
 /*-------------------------------------------*/
 
-.rainbow-text {
-    
-  }
 
   /* Animação ao passar o mouse */
   .rainbow-text:hover {
