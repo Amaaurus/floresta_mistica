@@ -80,7 +80,7 @@ body /* padrão */ {
 	filter: grayscale(0%);
 	margin: none;
 	transition: 1s;
-	transform: perspective(1000px) translateY(40%) rotateY(360deg) translateZ(0);
+	transform: perspective(1000px) translateY(40%) translateZ(0);
 	border-radius: 100%;
 	
 }
@@ -169,7 +169,7 @@ body /* padrão */ {
 	margin-left: 0%;
 	margin-right: 0%;
 	transition: 1s;
-	transform: perspective(1000px) translateY(40%) rotateY(360deg) translateZ(0);
+	transform: perspective(1000px) translateY(40%) translateZ(0);
 	border-radius: 100%;
   }
 .card:hover {
