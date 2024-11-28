@@ -1,58 +1,108 @@
-body /* padrão */ {
+/*-------------------ESTRUTURA_BASE------------------*/
+
+body{
   margin: 0;
   background-color: #20003a;
   color: rgb(255, 255, 255);
   cursor: url("images/cursor_auto.png"), auto;
-}
-
-::selection {
-  background-color: #00ff99; /* Cor de fundo da seleção */
-  color: #230027; /* Cor do texto selecionado */
-}
-
-.container {
   position: relative;
   min-height: 100vh;
   font-family: arial;
 }
 
-/*-------------------------------------------*/
-
-.principal {
-  margin: 2rem 0;
-  text-align: center;
+::selection { /* seleção de texto */
+  background-color: #00ff99; 
+  color: #230027; 
 }
 
-.titulo {
+/*--------------------CABEÇALHO-----------------------*/
+
+header {
   text-align: center;
-  font-family: arial;
+  margin-bottom: 3%;
 }
 
-.titulo2 {
+.banner {
+  background-color: #00c976;
+	padding: 150px 0px 150px 0px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 0vh;
+	filter: sepia(40%) hue-rotate(170deg) saturate(2);
+	background-image: url(images/4.gif);
+}
+
+.banner h1{
+  text-align: left;
+  margin-left: 5%;
+  color: #ffffff;
+  filter: none;
+  text-shadow: 2px 2px 20px #20003a77;
+}
+
+.banner p{
+  text-align: left;
+  margin-left: 5%;
+  color: #ffffff;
+  font-weight: bold;
+  filter: none;
+  text-shadow: 2px 2px 20px #20003a77;
+}
+
+.browser{
+  margin-top: 30px;
+}
+
+.browser_link {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  margin-top: 25px;
+  text-decoration: none;
+  cursor: url("images/cursor_auto.png"), auto;
+}
+
+.browser_button {
+  padding: 20px 35px;
+  text-transform: uppercase;
+  background-color: #00ff99;
+  color: #20003a;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+  cursor: url("images/cursor_pointer.png"), pointer;
+  font-weight: bold;
+}
+
+.browser_button:hover {
+  background-color: #c073ff;
+  box-shadow: 0px 0px 5px rgb(0, 37, 19);
+  transform: scale(1.1);
+  color: #20003a;
+  font-weight: bold;
+}
+
+.browser_button > a:hover {
+  background-color: #00c976;
+  transform: scale(1.1);
+  color: rgb(7, 0, 12);
+  cursor: url("images/cursor_auto.png"), auto;
+}
+
+.header_title {
   text-align: center;
   font-family: arial;
   margin-top: 0%;
 }
 
-.img {
-  cursor: url("images/cursor_auto.png"), auto;
-  /* Ocupa todo o espaço em largura do card */
-  width: 100%;
-  /* Ocupa todo o espaço em altura do card */
-  height: 100%;
-  /* define uma altura maxima para a imagem no card */
-  max-height: 220px;
-}
+/*--------------------PRINCIPAL-----------------------*/
 
-.img:hover {
-  cursor: url("images/cursor_auto.png"), auto;
-}
-
-.cards {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 5%;
-  margin-right: 5%;
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 5% 0% 5%;
 }
 
 .card {
@@ -61,7 +111,7 @@ body /* padrão */ {
   background-color: #4f018f;
   min-width: 5rem;
   min-height: 8rem;
-  margin: 5% 0;
+  margin: 3% 0;
   margin-left: 1%;
   margin-right: 1%;
   padding: 10px 0 2%;
@@ -72,6 +122,14 @@ body /* padrão */ {
   color: #ffffff;
   border-radius: 1%;
   cursor: url("images/cursor_move.png"), move;
+}
+
+.card:hover {
+  background-color: #00ff99;
+  color: black;
+  margin-left: 1%;
+  margin-right: 1%;
+  box-shadow: 0px 0px 1px 10px #00ff99;
 }
 
 .card img {
@@ -88,7 +146,75 @@ body /* padrão */ {
   border-radius: 100%;
 }
 
-.card2 {
+.card:hover p {
+  clip-path: inset(100%);
+}
+
+.card_image {
+  cursor: url("images/cursor_auto.png"), auto;
+  width: 100%;
+  height: 100%;
+  max-height: 220px;
+}
+
+.card_image:hover {
+  cursor: url("images/cursor_auto.png"), auto;
+}
+
+.card_title {
+  text-align: center;
+  font-family: arial;
+  margin: 2rem 2rem 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card_subtitle {
+  width: 160px;
+  height: 0px;
+  text-align: center;
+}
+
+.master_subtitle {
+  width: 160px;
+  height: 0px;
+  text-align: center;
+}
+
+.master {
+  text-decoration: none;
+  color: #00ff99;
+  font-weight: bold;
+}
+
+.card_button {
+  padding: 20px 35px;
+  text-transform: uppercase;
+  background-color: #20003a;
+  color: rgb(98, 34, 151);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  cursor: url("images/cursor_pointer.png"), pointer;
+  font-weight: bold;
+}
+
+.card_button > a {
+  color: white;
+  text-decoration: none;
+}
+
+.card_button:hover {
+  background-color: #20003a;
+  box-shadow: 0px 0px 5px rgb(0, 37, 19);
+  transform: scale(1.1);
+  color: #00ff99;
+  font-weight: bold;
+}
+
+/* -------------------- NEW_CARD ---------------------- */
+
+.new_card {
   justify-content: flex-start;
   align-items: center;
   background-color: #4f018f;
@@ -108,7 +234,7 @@ body /* padrão */ {
   transition: background-color 0.5s ease;
 }
 
-.card2:hover {
+.new_card:hover {
   background-color: #00ff99;
   color: black;
   margin-left: 1%;
@@ -116,14 +242,14 @@ body /* padrão */ {
   animation: rainbow-bg 6s infinite;
 }
 
-.plus-icon {
+.plus_icon {
   width: 220px;
   height: 220px;
   color: rgba(255, 255, 255, 0);
   fill: #20003a;
 }
 
-.card2 .plus-icon:hover {
+.new_card .plus_icon:hover {
   transition: 0.5s;
   width: 220px;
   height: 220px;
@@ -131,306 +257,191 @@ body /* padrão */ {
   fill: #20003a;
 }
 
-@keyframes rainbow-bg {
-  0% {
-    background-color: #ff0000;
-  } /* Vermelho */
-  1% {
-    background-color: #ff1a00;
-  } /* Vermelho Escuro */
-  2% {
-    background-color: #ff3300;
-  } /* Laranja claro */
-  4% {
-    background-color: #ff4d00;
-  } /* Laranja médio */
-  6% {
-    background-color: #ff7f2a;
-  } /* Laranja mais vívido */
-  8% {
-    background-color: #ff952b;
-  } /* Laranja mais escuro */
-  10% {
-    background-color: #ffa51d;
-  } /* Laranja forte */
-  15% {
-    background-color: #ffcc00;
-  } /* Amarelo forte */
-  20% {
-    background-color: #ffff00;
-  } /* Amarelo */
-  25% {
-    background-color: #bfff00;
-  } /* Amarelo Limão */
-  30% {
-    background-color: #00ff00;
-  } /* Verde Limão */
-  35% {
-    background-color: #00ff33;
-  } /* Verde Claro */
-  40% {
-    background-color: #00ff66;
-  } /* Verde Turquesa */
-  45% {
-    background-color: #00ff99;
-  } /* Verde Limão Claro */
-  50% {
-    background-color: #00ccff;
-  } /* Azul Claro */
-  55% {
-    background-color: #0099ff;
-  } /* Azul Forte */
-  60% {
-    background-color: #0066ff;
-  } /* Azul Royal */
-  65% {
-    background-color: #0033ff;
-  } /* Azul Escuro */
-  70% {
-    background-color: #6600ff;
-  } /* Roxo Claro */
-  75% {
-    background-color: #9900ff;
-  } /* Roxo Médio */
-  80% {
-    background-color: #cc00ff;
-  } /* Roxo Forte */
-  85% {
-    background-color: #ff0080;
-  } /* Rosa forte */
-  90% {
-    background-color: #ff0077;
-  } /* Rosa mais claro */
-  95% {
-    background-color: #ff002b;
-  } /* Rosa avermelhado */
-  100% {
-    background-color: #ff0000;
-  } /* Retorno ao Vermelho */
+.new_card .botao4 {
+  color: rgb(98, 34, 151);
+  transition: color 0.5s ease;
 }
 
-.card0 img {
-  transition: background-color 0.3s, color 0.3s;
-  transition: filter 0.5s;
-  filter: sepia(100%) hue-rotate(220deg);
-  margin-left: 0%;
-  margin-right: 0%;
+.new_card:hover .botao4 {
+  color: rgb(51, 255, 0);
+  animation: rainbow-text-color 6s infinite;
 }
 
-.card0:hover img {
-  filter: sepia(0%);
-  margin-left: 0%;
-  margin-right: 0%;
-  transition: 1s;
-  transform: perspective(1000px) translateY(40%) translateZ(0);
-  border-radius: 100%;
-}
-.card:hover {
-  background-color: #00ff99;
-  color: black;
-  margin-left: 1%;
-  margin-right: 1%;
-  box-shadow: 0px 0px 1px 10px #00ff99;
-}
-
-.card:hover p {
-  clip-path: inset(100%);
-}
-
-.card0:hover p {
-  clip-path: inset(100%);
-}
-
-.card0 {
-  background-color: #4f018f;
-  min-width: 5rem;
-  min-height: 8rem;
-  margin-top: 3%;
-  padding: 10px 0 2%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  box-shadow: 0px 0px 15px 0px #010e1f;
-  transition: 1s;
-  color: #ffffff;
-  border-radius: 1%;
-  cursor: url("images/cursor_move.png"), move;
-  transition: background-color 0.3s, color 0.3s;
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
-.card0:hover {
-  background-color: #00ff99;
-  color: black;
-  margin-left: 1%;
-  margin-right: 1%;
-  transition: 1s;
-  box-shadow: 0px 0px 1px 10px #00ff99;
-}
-
-.subtitle {
-  width: 160px;
-  height: 0px;
-  text-align: center;
-}
-
-.subtitle2 {
-  width: 160px;
-  height: 0px;
-  text-align: center;
-}
-
-.mestre {
-  text-decoration: none;
-  color: #00ff99;
-  font-weight: bold;
-}
-
-.teste {
+.space {
   margin-top: 20px;
   background-color: 0.5s ease;
   color: #0033ff;
   transition: color 6s ease;
 }
 
-.teste:hover {
+.space:hover {
   margin-top: 20px;
   animation: rainbow-bg 6s infinite;
 }
 
-.titulo {
-  margin: 2rem 2rem 1rem 2rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
+@keyframes rainbow-bg {
+  0% {
+    background-color: #ff0000;
+  }
+  1% {
+    background-color: #ff1a00;
+  }
+  2% {
+    background-color: #ff3300;
+  }
+  4% {
+    background-color: #ff4d00;
+  }
+  6% {
+    background-color: #ff7f2a;
+  }
+  8% {
+    background-color: #ff952b;
+  }
+  10% {
+    background-color: #ffa51d;
+  }
+  15% {
+    background-color: #ffcc00;
+  } 
+  20% {
+    background-color: #ffff00;
+  }
+  25% {
+    background-color: #bfff00;
+  } 
+  30% {
+    background-color: #00ff00;
+  }
+  35% {
+    background-color: #00ff33;
+  }
+  40% {
+    background-color: #00ff66;
+  }
+  45% {
+    background-color: #00ff99;
+  }
+  50% {
+    background-color: #00ccff;
+  } 
+  55% {
+    background-color: #0099ff;
+  }
+  60% {
+    background-color: #0066ff;
+  }
+  65% {
+    background-color: #0033ff;
+  }
+  70% {
+    background-color: #6600ff;
+  }
+  75% {
+    background-color: #9900ff;
+  }
+  80% {
+    background-color: #cc00ff;
+  }
+  85% {
+    background-color: #ff0080;
+  } 
+  90% {
+    background-color: #ff0077;
+  } 
+  95% {
+    background-color: #ff002b;
+  } 
+  100% {
+    background-color: #ff0000;
+  } 
 }
 
-.titulo2 {
-  margin: 0rem 2rem 1rem 2rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.botao {
-  padding: 20px 35px;
-  text-transform: uppercase;
-  background-color: #20003a;
-  color: rgb(98, 34, 151);
-  border: none;
-  border-radius: 5px;
-  transition: all 0.2s ease-in-out;
-  cursor: url("images/cursor_pointer.png"), pointer;
-  font-weight: bold;
-}
-
-.botao > a {
-  color: white;
-  text-decoration: none;
-}
-
-.botao:hover {
-  background-color: #20003a;
-  box-shadow: 0px 0px 5px rgb(0, 37, 19);
-  transform: scale(1.1);
-  color: #00ff99;
-  font-weight: bold;
-}
-
-.botao > a:hover {
-  background-color: #00c976;
-  transform: scale(1.1);
-  color: rgb(7, 0, 12);
-  cursor: url("images/cursor_auto.png"), auto;
-}
-
-/*-------------------------------------------*/
-
-/* Animação ao passar o mouse */
-.rainbow-text:hover {
-  animation: rainbow-text-color 6s infinite; /* Animação de cor ao passar o mouse */
-}
-
-/* Keyframes para a animação do texto com cor */
 @keyframes rainbow-text-color {
   0% {
     color: #ff0000;
-  } /* Vermelho */
+  }
   1% {
     color: #ff1a00;
-  } /* Vermelho escuro */
+  }
   2% {
     color: #ff3300;
-  } /* Laranja claro */
+  }
   4% {
     color: #ff4d00;
-  } /* Laranja médio */
+  }
   6% {
     color: #ff6600;
-  } /* Laranja mais vívido */
+  }
   8% {
     color: #ff7f00;
-  } /* Laranja mais escuro */
+  }
   10% {
     color: #ff9900;
-  } /* Laranja forte */
+  }
   15% {
     color: #ffcc00;
-  } /* Amarelo forte */
+  }
   20% {
     color: #ffff00;
-  } /* Amarelo */
+  }
   25% {
     color: #bfff00;
-  } /* Amarelo limão */
+  }
   30% {
     color: #00ff00;
-  } /* Verde limão */
+  }
   35% {
     color: #00ff33;
-  } /* Verde claro */
+  }
   40% {
     color: #00ff66;
-  } /* Verde turquesa */
+  } 
   45% {
     color: #00ff99;
-  } /* Verde limão claro */
+  }
   50% {
     color: #00ccff;
-  } /* Azul claro */
+  }
   55% {
     color: #0099ff;
-  } /* Azul forte */
+  }
   60% {
     color: #0066ff;
-  } /* Azul royal */
+  }
   65% {
     color: #0033ff;
-  } /* Azul escuro */
+  }
   70% {
     color: #6600ff;
-  } /* Roxo claro */
+  }
   75% {
     color: #9900ff;
-  } /* Roxo médio */
+  }
   80% {
     color: #cc00ff;
-  } /* Roxo forte */
+  }
   85% {
     color: #ff00cc;
-  } /* Rosa forte */
+  } 
   90% {
     color: #ff0099;
-  } /* Rosa mais claro */
+  }
   95% {
     color: #ff0066;
-  } /* Rosa avermelhado */
+  }
   100% {
     color: #ff0000;
-  } /* Retorno ao vermelho */
+  }
 }
+
+
+
+
+
+/* -----------falta organizar (rodapé) ------------- */
+
+
 
 .botao4 {
   padding: 20px 35px;
@@ -458,15 +469,7 @@ body /* padrão */ {
   animation: rainbow-text-color 6s infinite;
 }
 
-.card2 .botao4 {
-  color: rgb(98, 34, 151);
-  transition: color 0.5s ease;
-}
 
-.card2:hover .botao4 {
-  color: rgb(51, 255, 0);
-  animation: rainbow-text-color 6s infinite;
-}
 
 .botao4 > a:hover {
   transform: scale(1.1);
@@ -544,13 +547,7 @@ html {
   box-shadow: 0px 0px 25px #00ff88;
 }
 
-.navegar {
-  display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  margin-top: 25px;
-  text-decoration: none;
-  cursor: url("images/cursor_auto.png"), auto;
-}
+
 
 .imagem {
   margin-bottom: -10px;
@@ -596,38 +593,8 @@ html {
   font-weight: bold;
 }
 
-.botao3 {
-  padding: 20px 35px;
-  text-transform: uppercase;
-  background-color: #00ff99;
-  color: #20003a;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  transition: all 0.2s ease-in-out;
-  cursor: url("images/cursor_pointer.png"), pointer;
-  font-weight: bold;
-}
 
-.botao3:hover {
-  background-color: #c073ff;
-  box-shadow: 0px 0px 5px rgb(0, 37, 19);
-  transform: scale(1.1);
-  color: #20003a;
-  font-weight: bold;
-}
 
-.navegador {
-  background-color: #00c976;
-  padding: 150px 0px 150px 0px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 0vh;
-  filter: sepia(50%) hue-rotate(95deg) saturate(1);
-  background-image: url(https://r2pg.com.br/wp-content/uploads/2017/06/piotr-dura-tree-of-the-forgotten2k.jpg);
-}
 
 .menu {
   position: fixed;
