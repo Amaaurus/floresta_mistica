@@ -2,166 +2,155 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" /> <!-- ? -->
-    <link rel="stylesheet" href="style.css" /> <!-- conexão com o documento css -->
-    <link rel="icon" type="image/x-icon" href="images/1.png" /> <!-- ícone da barra superior -->
+    <title>Floresta Mística</title>
+    <link rel="icon" type="image/x-icon" href="images/1.gif" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-    <title>Floresta Mística</title> <!-- título da barra superior -->
-    <script>
-        
-    </script>
 </head>
 
-<body id="topo" class="container">
-    <div class="navegador">
-        <div class="menu">
-        </div>
-        <div class="content">
-            <h1>Bem-vindo(a) a Floresta Mística </h1>
-            <p>Nas árvores do saber tu encontrarás o sistema que procuras</h1></p>
-        </div>
-    </div>
-    <header class="cabeçalho"> <!-- cabeçalho -->
-        <nav class="menu"> <!-- navegador -->
-        </nav>
+<body>
+    <header>
+        <session id="header" class="header">
+            <div class="banner">
+                <h1>Bem-vindo(a) a Floresta Mística</h1>
+                <p>Nas árvores do saber tu encontrarás o sistema que procuras</h1></p>
+             </div>
+            <div classe="browser">
+                <a class="browser_link" href="#copyright">
+                    <button class="browser_button">DESCER AOS CRÉDITOS</button>
+                </a>
+                <h1 class="header_title"> SELECIONE O SISTEMA ABAIXO</h1>
+                <img src="images/3.png" width="30" height="30" />
+            </div>
+        </session>
     </header>
 
-    <main class="principal"> <!-- conteúdo -->
-        <a class="navegar" href="#baixo"><button class="botao3">  DESCER AOS CRÉDITOS </button></a>
-        <h1 class="titulo2"> SELECIONE O SISTEMA ABAIXO</h1>
-        <img src="images/3.png" width="30" height="30" />
+    <main>
+        <session id="sistems" class="sistems">
+            <div id="container" class="container">
+                <div class="card">
+                    <img class="card_image" src="sistemas/d&d/images_d&d/d&d_perfil.jpg" />
+                    <p class="card_title">D&D</p>
+                    <p class="card_subtitle"> Dungeons & Dragons </p></br>
+                    <p class="master_subtitle"> <a class="master">Mestre ?</a></p></br>
+                    <a target="_blank" href="http://dnd5ed.github.io/download-dos-livros/"><button class="card_button"> Selecionar </button></a>
+                </div>
+                <div class="card">
+                    <img class="card_image" src="sistemas/pp&+p/images_pp&+p/pp&+p_perfil.png"/>
+                    <p class="card_title">PP&+P</p>
+                    <p class="card_subtitle"> Portas Portas & Mais Portas </p></br>
+                    <p class="master_subtitle"> <a class="master">Mestre Amaaurus</a></p></br>
+                    <a><button onclick="mostrarAlerta()" class="card_button"> Selecionar </button></a>
+                </div>
+                <div class="card">
+                    <img class="card_image" src="sistemas/t20/images_t20/t20_perfil.png"/>
+                    <p class="card_title">T20</p>
+                    <p class="card_subtitle"> Tormenta 20 </p></br>
+                    <p class="master_subtitle"> <a class="master">Mestre Alex</a></p></br>
+                    <a target="_blank" href="https://drive.google.com/file/d/1S0friQdtN8clwVoAA3uk31PHzmGTlJR8/view?usp=sharing"><button class="card_button">Selecionar</button></a>
+                </div>
+                <div class="card">
+                    <img class="card_image" src="sistemas/ngba/images_ngba/ngba_perfil.jpeg"/>
+                    <p class="card_title">NGBA</p>
+                    <p class="card_subtitle"> Neon Gentilmente </br> Bizarre Adventures </p></br>
+                    <p class="master_subtitle"> <a class="master">Mestre Caio</a></p></br>
+                    <a><button onclick="mostrarAlerta()" class="card_button">Selecionar</button></a>
+                </div>
+            </div>
+            <div id="container" class="container">
+                <div class="card">
+                    <img class="card_image" src="sistemas/cb-3000/images_cb-3000/cb-3000_perfil.jpeg"/>
+                    <p class="card_title">CB-3000</p>
+                    <p class="card_subtitle"> CyberBeat-3000 </p></br>
+                    <p class="master_subtitle"> <a class="master">Mestre Amaaurus</a></p></br>
+                    <a target="_blank" href="https://alert-ziconium-b72.notion.site/SISTEMA-CYBERBEAT-3000-6330347fa5884afcad4eaa33d1f7e4b2"><button class="card_button"> Selecionar </button></a>
+                </div>
 
-        <!-- cards -->
-        <div class="cards">
-            <div class="card0">
-                <img class="img" src="sistemas/d&d/images_d&d/d&d_perfil.jpg" />
-                <p class="titulo">D&D</p>
-                <p class="subtitle"> Dungeons & Dragons </p></br>
-                <p class="subtitle2"> <a class="mestre">Mestre ?</a></p></br>
-                <a target="_blank" href="http://dnd5ed.github.io/download-dos-livros/"><button class="botao"> Selecionar </button></a>
-            </div>
+                <div class="card">
+                    <img class="card_image" src="sistemas/b&b/images_b&b/b&b_perfil.jpeg"/>
+                    <p class="card_title">B&B</p>
+                    <p class="card_subtitle"> Busôes & Boletos </p></br>
+                    <p class="master_subtitle"> <a class="master">Mestre Amaaurus</a></p></br>
+                    <a target="_blank" href="https://drive.google.com/file/d/1RL47xg5PdFXquQX-T8Hbkm45g5aa5fvl/view"><button class="card_button"> Selecionar </button></a>
+                </div>
 
-            <div class="card0">
-                <img class="img" src="sistemas/pp&+p/images_pp&+p/pp&+p_perfil.png"/>
-                <p class="titulo">PP&+P</p>
-                <p class="subtitle"> Portas Portas & Mais Portas </p></br>
-                <p class="subtitle2"> <a class="mestre">Mestre Amaaurus</a></p></br>
-                <a><button onclick="mostrarAlerta()" class="botao"> Selecionar </button></a>
-            </div>
+                <div class="card">
+                    <img class="card_image" src="sistemas/gurps/images_gurps/gurps_perfil.png"/>
+                    <p class="card_title">GURPS</p>
+                    <p class="card_subtitle"> Generic and Universal Role Playing System </p></br>
+                    <p class="master_subtitle"> <a class="master">Mestre ?</a></p></br>
+                    <a target="_blank" href="https://drive.google.com/file/d/1qzYHHR-k5fCYdKBssLS2zKzfNg6HTelb/view?usp=drive_link"><button class="card_button">Selecionar</button></a>
+                </div>
 
-            <div class="card0">
-                <img class="img" src="sistemas/t20/images_t20/t20_perfil.png"/>
-                <p class="titulo">T20</p>
-                <p class="subtitle"> Tormenta 20 </p></br>
-                <p class="subtitle2"> <a class="mestre">Mestre Alex</a></p></br>
-                <a target="_blank" href="https://drive.google.com/file/d/1S0friQdtN8clwVoAA3uk31PHzmGTlJR8/view?usp=sharing"><button class="botao">Selecionar</button></a>
-            </div>
-
-            <div class="card0">
-                <img class="img" src="sistemas/ngba/images_ngba/ngba_perfil.jpeg"/>
-                <p class="titulo">NGBA</p>
-                <p class="subtitle"> Neon Gentilmente </br> Bizarre Adventures </p></br>
-                <p class="subtitle2"> <a class="mestre">Mestre Caio</a></p></br>
-                <a><button onclick="mostrarAlerta()" class="botao">Selecionar</button></a>
-            </div>
-        </div>
-        <div class="cards">
-          <div class="card">
-              <img class="img" src="sistemas/cb-3000/images_cb-3000/cb-3000_perfil.jpeg"/>
-              <p class="titulo">CB-3000</p>
-              <p class="subtitle"> CyberBeat-3000 </p></br>
-              <p class="subtitle2"> <a class="mestre">Mestre Amaaurus</a></p></br>
-              <a target="_blank" href="https://alert-ziconium-b72.notion.site/SISTEMA-CYBERBEAT-3000-6330347fa5884afcad4eaa33d1f7e4b2"><button class="botao"> Selecionar </button></a>
-          </div>
-
-          <div class="card">
-              <img class="img" src="sistemas/b&b/images_b&b/b&b_perfil.jpeg"/>
-              <p class="titulo">B&B</p>
-              <p class="subtitle"> Busôes & Boletos </p></br>
-              <p class="subtitle2"> <a class="mestre">Mestre Amaaurus</a></p></br>
-              <a target="_blank" href="https://drive.google.com/file/d/1RL47xg5PdFXquQX-T8Hbkm45g5aa5fvl/view"><button class="botao"> Selecionar </button></a>
-          </div>
-
-          <div class="card">
-              <img class="img" src="sistemas/gurps/images_gurps/gurps_perfil.png"/>
-              <p class="titulo">GURPS</p>
-              <p class="subtitle"> Generic and Universal Role Playing System </p></br>
-              <p class="subtitle2"> <a class="mestre">Mestre ?</a></p></br>
-              <a target="_blank" href="https://drive.google.com/file/d/1qzYHHR-k5fCYdKBssLS2zKzfNg6HTelb/view?usp=drive_link"><button class="botao">Selecionar</button></a>
-          </div>
-
-          <div class="card">
-              <img class="img" src="sistemas/ps1/images_ps1/ps1_perfil.jpeg"/>
-              <p class="titulo">PS1</p>
-              <p class="subtitle"> Play Station One </p></br>
-              <p class="subtitle2"> <a class="mestre">Mestre Guilhermano</a></p></br>
-              <a target="_blank" href="https://ps1-.notion.site/Sistema-6c614ae479ee4adcb19a083a682b049f"><button class="botao"> Selecionar </button></a>
-          </div>
-          </div> 
-          <div class="cards">
-            <div class="card0">
-                <img class="img" src="sistemas/gba/images_gba/gba_perfil.jpeg"/>
-                <p class="titulo">GBA</p>
-                <p class="subtitle"> Gentilmente </br> Bizarre Adventures </p></br>
-                <p class="subtitle2"> <a class="mestre">Mestre Caio</a></p></br>
-                <a><button onclick="mostrarAlerta()" class="botao">Selecionar</button></a>
-            </div>
-  
-            <div class="card0">
-                <img class="img" src="sistemas/gotham/images_gotham/gotham_perfil.jpeg"/>
-                <p class="titulo">GTHM</p>
-                <p class="subtitle"> Gotham </p></br>
-                <p class="subtitle2"> <a class="mestre">Mestre Guileisme</a></p></br>
-                <a target="_blank" href="https://responsible-cephalopod-42d.notion.site/FICHA-DE-GOTHAM-201387b30d354472bd80107d402154b6"><button class="botao">Selecionar</button></a>
-            </div>
-  
-            <div class="card0">
-                <img class="img" src="sistemas/hxh/images_hxh/hxh_perfil.jpeg"/>
-                <p class="titulo">HxH</p>
-                <p class="subtitle"> Hunter x Hunter</p></br>
-                <p class="subtitle2"> <a class="mestre">Mestre Yan</a></p></br>
-                <a target="_blank" href="https://www.notion.so/Hunter-x-Hunter-RPG-0dc1d9beadd3446fa15f3fefeffe385f?pvs=4"><button class="botao">Selecionar</button></a>
-            </div>
-  
-            <div class="card0">
-                <img class="img" src="sistemas/jjc/images_jjc/jjc_perfil.jpeg"/>
-                <p class="titulo">JJC</p>
-                <p class="subtitle"> Jujutsu Caruaruense </p></br>
-                <p class="subtitle2"> <a class="mestre">Mestre Lost</a></p></br>
-                <a><button onclick="mostrarAlerta()" class="botao">Selecionar</button></a>
-            </div>
+                <div class="card">
+                    <img class="card_image" src="sistemas/ps1/images_ps1/ps1_perfil.jpeg"/>
+                    <p class="card_title">PS1</p>
+                    <p class="card_subtitle"> Play Station One </p></br>
+                    <p class="master_subtitle"> <a class="master">Mestre Guilhermano</a></p></br>
+                    <a target="_blank" href="https://ps1-.notion.site/Sistema-6c614ae479ee4adcb19a083a682b049f"><button class="card_button"> Selecionar </button></a>
+                </div>
             </div> 
-      </div>
-    <div class="cards">
-      <div class="card2">
-          <svg class="plus-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <rect x="11" y="5" width="2" height="14" stroke="currentColor"/>
-            <rect x="5" y="11" width="14" height="2" stroke="currentColor"/>
-          </svg>
-          
-        <p class="titulo2">NOVO SISTEMA</p>
-        <a class="teste"><button onclick="mostrarAlerta()" class="botao4">Adicionar</button></a>
-      </div>
-      
-
- <div id="meuModal" class="modal">
-     <div class="modal-content">
-         <p>Tens um sistema que deseja adiconar ao site? contate amaaurus@proton.me</p>
-         <button class="close" onclick="fecharAlerta()">Fechar</button>
-     </div>
- </div>
-</div>
+            <div id="container" class="container">
+                <div class="card">
+                    <img class="card_image" src="sistemas/gba/images_gba/gba_perfil.jpeg"/>
+                    <p class="card_title">GBA</p>
+                    <p class="card_subtitle"> Gentilmente </br> Bizarre Adventures </p></br>
+                    <p class="master_subtitle"> <a class="master">Mestre Caio</a></p></br>
+                    <a><button onclick="mostrarAlerta()" class="card_button">Selecionar</button></a>
+                </div>
+                <div class="card">
+                    <img class="card_image" src="sistemas/gotham/images_gotham/gotham_perfil.jpeg"/>
+                    <p class="card_title">GTHM</p>
+                    <p class="card_subtitle"> Gotham </p></br>
+                    <p class="master_subtitle"> <a class="master">Mestre Guileisme</a></p></br>
+                    <a target="_blank" href="https://responsible-cephalopod-42d.notion.site/FICHA-DE-GOTHAM-201387b30d354472bd80107d402154b6"><button class="card_button">Selecionar</button></a>
+                </div>
+                <div class="card">
+                    <img class="card_image" src="sistemas/hxh/images_hxh/hxh_perfil.jpeg"/>
+                    <p class="card_title">HxH</p>
+                    <p class="card_subtitle"> Hunter x Hunter</p></br>
+                    <p class="master_subtitle"> <a class="master">Mestre Yan</a></p></br>
+                    <a target="_blank" href="https://www.notion.so/Hunter-x-Hunter-RPG-0dc1d9beadd3446fa15f3fefeffe385f?pvs=4"><button class="card_button">Selecionar</button></a>
+                </div>
+                <div class="card">
+                    <img class="card_image" src="sistemas/jjc/images_jjc/jjc_perfil.jpeg"/>
+                    <p class="card_title">JJC</p>
+                    <p class="card_subtitle"> Jujutsu Caruaruense </p></br>
+                    <p class="master_subtitle"> <a class="master">Mestre Lost</a></p></br>
+                    <a><button onclick="mostrarAlerta()" class="card_button">Selecionar</button></a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="new_card">
+                    <svg class="plus_icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="11" y="5" width="2" height="14" stroke="currentColor"/>
+                        <rect x="5" y="11" width="14" height="2" stroke="currentColor"/>
+                    </svg>
+                    <p class="new_card_title">NOVO SISTEMA</p>
+                     <a class="space"><button onclick="mostrarAlerta()" class="botao4">Adicionar</button></a>
+                </div>
+            </div>
+        </session>
+        <session id="menssage_alert" class="menssage_alert">
+            <div id="meuModal" class="modal">
+                <div class="modal-content">
+                    <p>Tens um sistema que deseja adiconar ao site? contate amaaurus@proton.me</p>
+                    <button class="close" onclick="fecharAlerta()">Fechar</button>
+                </div>
+            </div>
+        </session>
     </main>
 
-    <footer class="rodape"> <!-- rodapé -->
+    <footer class="rodape"> 
         <div class="imagem">
             <img src="images/2.png" width="100%" margin="0%" />
         </div>
         <div class="bloco">
-            <a class="navegar" href="#topo"> <button class="botao2">  Subir ao Topo </button></a>
+            <a class="browser_link" href="#header"> <button class="botao2">  Subir ao Topo </button></a>
         <hr class="linha">
-            <p id="baixo" class="copyright"> Projeto desenvolvido por <a class="ref" href="https://github.com/Amaaurus"></a> em 2024 </p>
-            <a class="navegar" href="beta/index.html"> <button class="botao5">  Versão Beta </button></a>
+            <p id="copyright" class="copyright"> Projeto desenvolvido por <a class="ref" href="https://github.com/Amaaurus"></a> em 2024 </p>
+            <a class="browser_link" href="beta/index.html"> <button class="botao5">  Versão Beta </button></a>
         </div>
     </footer>
 </body>
