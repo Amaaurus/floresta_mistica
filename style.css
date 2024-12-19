@@ -8,6 +8,9 @@ body{
   position: relative;
   min-height: 100vh;
   font-family: arial;
+  background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p1/7660912-fundo-roxo-com-linha-curva-e-textura-grains-design-ilustracao-eps10-vetor.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 ::selection { /* seleção de texto */
@@ -465,8 +468,6 @@ header {
   box-shadow: 0px 0px 5px rgb(0, 37, 19);
   transform: scale(1.1);
   font-weight: bold;
-  color: rgb(217, 255, 0);
-  animation: rainbow-text-color 6s infinite;
 }
 
 .new_card_button > a {
